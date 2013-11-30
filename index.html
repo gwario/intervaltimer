@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	
+	<title>Workout stopwatch</title>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<link rel='stylesheet' href='intervaltimer.jquery.css'>
+	<link rel='stylesheet' href='style.css'>
+	
+	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script><!-- for use via file:// -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script><!-- for use via file:// -->
+	<script src='intervaltimer.jquery.js'></script>
+	<script src='script.js'></script>
+</head>
+<body>
+	<header>
+		<h1>Workout stopwatch</h1>
+		<h2>Define your own intervals</h2>
+		
+		<ul id='menu'>
+			<li><a data-section='sec-home'>Home</a></li>
+			<li><a data-section='sec-define'>define</a></li>
+			<li><a id='btn-run' data-section='sec-run'>run</a></li>
+		</ul>
+	</header>
+	
+	<section id='sec-home'>
+		<article>Work-out stop watch is a web application which supports your work out by enabling you to define and combining different time intervals. Further more you can choose between sound and color effects(not yet implemented). And for your convenience, this application will also look nice on your mobile phone.</article>
+	</section>
+	
+	<section id='sec-define'>
+		<div id='define'>
+			<label><span>Interval[sec]: </span><input type='number' name='interval' min='0' step='10' value='60'/></label>
+			<button id='btn-add'>add</button>
+			<label><span>Loop intervals: </span><input type='checkbox' name='loop'/></label>
+		</div>
+		<div>
+			<ol id='program'>
+			</ol>
+		</div>
+	</section>
+	
+	<section id='sec-run'>
+		<div>
+			<button id='btn-timer'>start</button>
+			<div id='timer'></div>
+			<span id='label'></span>
+		</div>
+		<div>
+			<ol id='done-intervals'>
+			</ol>
+		</div>
+	</section>
+	
+	<footer>
+		&copy; 2013 <a href="mailto:mario.gastegger@gmail.com">Mario Gastegger</a> <a href='LICENSE.md' target='_blank'>license</a>.<br/>
+		<a href="mailto:mario.gastegger@gmail.com?subject=Feedback - Workout stopwatch">Send feedback(EMAIL)!</a><br/>
+		<a class="mobile" href="sms:+436603916150?body=Feedback-Workoutstopwatch">Send feedback(SMS)!</a>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+
+/* BETA hide non functional */
+.no-beta {
+	display: none !important;
+}
+
+
+
+body {
+	position: relative;
+	width: 40%;
+	min-width: 350px;
+	margin: auto;
+}
+footer {
+	position: fixed;
+	bottom: 0px;
+}
+header #menu {
+	padding-left: 0;
+}
+header #menu > li {
+	margin-right: 10px;
+	display: inline;
+	list-style: none;
+}
+header #menu > li a {
+	cursor: pointer;
+	color: blue;
+}
+header #menu > li a:hover {
+	text-decoration: underline;
+}
+section {
+	display: none;
+}
+#sec-home {
+	display: block;
+}
+
+#sec-define > div {
+	float: left;
+	width: 50%;
+}
+#sec-define label {
+	display: block;
+}
+#sec-define input[name='interval'] {
+	width: 50px;
+}
+
+#sec-run > div {
+	float: left;
+	width: 50%;
+}
+#done-intervals > li {
+	line-height: 1.4em;
+}
+
+#done-intervals {
+	list-style-type: none;
+	overflow: overlay;
+	max-height: 300px;
+}
+
+.mobile {
+	display: none;
+}
+.remove {
+	background: url(glyphicons_free/glyphicons/png/glyphicons_197_remove.png);
+	background-size: 15px;
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	margin-left: 5px;
+	display: inline-block;;
+}
+

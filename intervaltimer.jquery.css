@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+.intervaltimer {
+	
+	position: relative;
+	
+	/*width: 150px;*/
+	/*height: 150px;*/
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
